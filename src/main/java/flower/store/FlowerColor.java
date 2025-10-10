@@ -5,6 +5,7 @@ public enum FlowerColor {
      * Flower colors.
      */
     RED("#FF0000"), BLUE("#0000FF");
+
     private final String stringRepresentation;
 
     FlowerColor(String stringRepresentation) {
@@ -13,6 +14,7 @@ public enum FlowerColor {
 
     @Override
     public String toString() {
+
         return stringRepresentation;
     }
 }
