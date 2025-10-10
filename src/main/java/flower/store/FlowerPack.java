@@ -1,7 +1,9 @@
 package flower.store;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Data
 public class FlowerPack {
 
@@ -14,6 +16,7 @@ public class FlowerPack {
 
     public FlowerPack(Flower flower, int quantity) {
         this.flower = new Flower(flower);
+        this.quantity = quantity;
     }
 
     public double getPrice() {

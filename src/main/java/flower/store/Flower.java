@@ -38,5 +38,7 @@ public class Flower {
         this.price = other.price;
         this.sepalLength = other.sepalLength;
         this.flowerType = other.flowerType;
+
     }
+
 }

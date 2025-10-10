@@ -21,4 +21,13 @@ public class FlowerBucket {
         }
         return total;
     }
+
+    public List<Flower> allFlowers() {
+        List<Flower> flowers = new ArrayList<Flower>();
+        for (FlowerPack pack : flowerPacks) {
+            flowers.add(pack.getFlower());
+        }
+
+        return flowers;
+    }
 }
