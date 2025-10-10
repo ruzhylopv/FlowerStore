@@ -29,5 +29,10 @@ public class FlowerTest {
         FlowerColor color = FlowerColor.RED;
         flower.setColor(color);
         Assertions.assertEquals("#FF0000", flower.getColor());
+        // Unexpected behaviour: color can be null.
+        // flower.setColor(null);
+        Assertions.assertThrows(NullPointerException.class, () -> flower.setColor(null));
+        Assertions.assertEquals("#FF0000", flower.getColor());
     }
+
 }
