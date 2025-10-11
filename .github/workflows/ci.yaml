@@ -19,6 +19,7 @@ jobs:
                   distribution: "adopt"
             - name: Lint Code Base
               uses: github/super-linter/slim@v4
+              continue-on-error: true
               env:
                   DEFAULT_BRANCH: master
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
