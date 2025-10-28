@@ -1,12 +1,13 @@
 package flower.store;
 
+import flower.store.order.OrderItem;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Setter
 @NoArgsConstructor
-public class Flower {
+public class Flower extends OrderItem {
     @Getter
     private double sepalLength;
     private FlowerColor color;
